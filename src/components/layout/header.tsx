@@ -9,9 +9,9 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const navLinks = [
   { href: '#about', label: 'About' },
-  { href: '#mission', label: 'Mission' },
-  { href: '#impact', label: 'Impact' },
-  { href: '#volunteer', label: 'Volunteer' },
+  { href: '#mission', label: 'Programs' },
+  { href: '#impact', label: 'Latest Updates' },
+  { href: '#contact', label: 'Contact Us' },
 ];
 
 export function Header() {
