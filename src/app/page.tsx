@@ -25,17 +25,16 @@ const HeroSection = () => (
   <section
     id="home"
     className="relative flex h-[80vh] min-h-[500px] w-full items-center justify-center bg-cover bg-center bg-no-repeat text-center text-white"
-    style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
-    data-ai-hint="charity community"
-  >
+    style={{ backgroundImage: 'url("/images/uday_run.jpg")' }}
+    data-ai-hint='charity community'
+  > 
     <div className="absolute inset-0 bg-black/50" />
     <div className="relative z-10 flex flex-col items-center space-y-6 p-4">
       <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
-        Empowering Communities, Changing Lives
+        Audai Shakour Foundation
       </h1>
       <p className="max-w-3xl text-lg text-primary-foreground/90 md:text-xl">
-        Audai is a non-profit organization committed to creating lasting change
-        through education, empowerment, and community-driven initiatives.
+      The Audai Shakour Foundation (Audai.org) is a 501(c)(3) non-profit dedicated to enhancing the lives of people living in impoverished conditions. Audai was a young man who was committed to helping those in need, and we are continuing his legacy by supporting the causes he was passionate about--helping one person, one community at a time.
       </p>
       <div className="flex flex-wrap justify-center gap-4">
         <Button asChild size="lg">
@@ -58,21 +57,27 @@ const AboutSection = () => (
     <div className="container mx-auto px-4">
       <div className="grid items-center gap-12 md:grid-cols-2">
         <div className="space-y-4">
-          <Badge>About Audai</Badge>
+          <Badge>Audai Shakour</Badge>
           <h2 className="font-headline text-4xl font-bold">
-            Who We Are
+            About Audai
           </h2>
           <p className="text-lg text-muted-foreground">
-            Audai was founded on the principle that everyone deserves the opportunity to reach their full potential. We are a dedicated team of professionals, volunteers, and partners working together to address critical social challenges. Our approach is rooted in collaboration, sustainability, and a deep respect for the communities we serve.
+          A week after Audai passed away, I (Audai’s father) woke up remembering an incident in 1991 when Audai was only six years old.  We were taking a walk as a family on a Saturday afternoon to pick up a few books when suddenly I noticed Audai was missing.  I looked back and saw him talking to a homeless man a few yards behind us.  He ran back to me and asked for some money, “Dad, the man over there is hungry, and the money can help buy his lunch.”  From his childhood to his last breath, Audai lived by that example, always wanting to make someone happy.
           </p>
           <p className="text-lg text-muted-foreground">
-            Through our programs, we aim to build a world where individuals are empowered, communities are strengthened, and positive change is a collective achievement.
+          A few days later, I went to his bank to inform his death.  When I pulled his wallet to get his bank card, I found a little card with a prayer for generosity from St. Ignatius Loyola.  At that very moment, I knew he wanted us to continue the charitable work that he was so passionate about.  He always said, “Life is better when you are happy, but life is best when others are happy because of you.”
+          </p>
+          <p className="text-lg text-muted-foreground">
+          At only 36, Audai passed away at the prime of his life in a tragic accident.  He was a great loss to family, friends, colleagues, and everyone who had the benefit to know him.  He was passionate about life while keeping a healthy lifestyle through running and joining local sports teams.  Audai was an empathetic leader who cared for those in need and was a true humanitarian who made an impact in communities near and far.  From taking care of expenses for a medical student in Sri Lanka, building a home for a single mother to providing weekly meals to LA homeless, and supporting meals for orphan children in Sudan, Audai gave all he could in hopes of a better world.
+          </p>
+          <p className="text-lg text-muted-foreground">
+          Audai grew up in Mountain View, California.  After graduating high school, Audai attended George Washington University.  He received a Bachelor of Science in International Economics followed by a Master of Arts in Communication, Culture and Technology at Georgetown University.  He was an avid leader, high school, and college student body president.  A few weeks before his passing, he started his pollical career in the neighborhood city council because he wanted to take a significant role in eradicating homelessness in Los Angeles.  Audai loved to read, knew his way around words, and was a beautiful storyteller who would light up any room he stepped in.  At 6 feet 7, Audai was a kind giant who made people feel that anything in life was possible if you believed in yourself.
           </p>
         </div>
         <div>
           <Image
-            src="https://placehold.co/600x400.png"
-            alt="Audai team working with the community"
+            src="/images/audia_smile.png"
+            alt="Audai smiling"
             width={600}
             height={400}
             className="rounded-lg shadow-lg"
@@ -90,49 +95,81 @@ const MissionSection = () => (
       <div className="text-center">
         <Badge>Our Mission</Badge>
         <h2 className="font-headline mt-4 text-4xl font-bold">
-          Our Core Pillars
+          Programs We Support
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+        {/* <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
           We focus on three key areas to create sustainable impact and foster growth in the communities we serve.
-        </p>
+        </p> */}
       </div>
       <div className="grid gap-8 md:grid-cols-3">
-        <Card className="text-center">
-          <CardHeader>
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
-              <Heart className="h-8 w-8" />
-            </div>
-            <CardTitle className="font-headline mt-4 text-2xl">Empower</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">
-              We provide individuals with the tools, resources, and confidence to build better futures for themselves and their families.
-            </p>
-          </CardContent>
+        <Card className="relative text-center">
+          {/* Background Image with Opacity */}
+          <div 
+            className="absolute inset-0 rounded-lg" 
+            style={{ 
+              backgroundImage: 'url("/images/clean_water.png")', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center', 
+              opacity: 0.2 
+            }} 
+          />
+          {/* Card Content */}
+          <div className="relative z-10">
+            <CardHeader>
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <Heart className="h-8 w-8" />
+              </div>
+              <CardTitle className="font-headline mt-4 text-2xl">Clean Water</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-foreground">
+              Provide clean water and irrigation for agriculture to impoverished communities and those affected by the dry climate.
+              </p>
+            </CardContent>
+          </div>
         </Card>
-        <Card className="text-center">
+        <Card className="relative text-center">
+          {/* Background Image with Opacity */}
+          <div 
+            className="absolute inset-0 rounded-lg" 
+            style={{ 
+              backgroundImage: 'url("/images/social_1.png")', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center', 
+              opacity: 0.2 
+            }} 
+          />
           <CardHeader>
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
               <Users className="h-8 w-8" />
             </div>
-            <CardTitle className="font-headline mt-4 text-2xl">Educate</CardTitle>
+            <CardTitle className="font-headline mt-4 text-2xl">Improve Social Well-Being</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">
-             Our educational programs unlock potential, offering access to knowledge and skills that open doors to new opportunities.
+            <p className="text-foreground">
+            Provide and promote social welfare programs in disadvantaged communities, including, but not limited to, access to free health care, food, clothes, educational services, home development and animal well-being.
             </p>
           </CardContent>
         </Card>
-        <Card className="text-center">
+        <Card className="relative text-center">
+        <div 
+            className="absolute inset-0 rounded-lg" 
+            style={{ 
+              backgroundImage: 'url("/images/donate.png")', 
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center', 
+              opacity: 0.2 
+            }} 
+          />
           <CardHeader>
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
               <Target className="h-8 w-8" />
             </div>
-            <CardTitle className="font-headline mt-4 text-2xl">Advocate</CardTitle>
+            <CardTitle className="font-headline mt-4 text-2xl">In Kind Donation</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">
-              We champion the rights and needs of the communities we serve, working to create systemic change and a more equitable society.
+            <p className="text-foreground">
+            In lieu of a monetary donation, we accept in-kind donations to continue ASCF’s mission at the local and international levels.
             </p>
           </CardContent>
         </Card>
