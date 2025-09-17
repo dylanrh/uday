@@ -39,7 +39,7 @@ const HeroSection = () => (
       </p>
       <div className="flex flex-wrap justify-center gap-4">
         <Button asChild size="lg">
-          <a href="#volunteer">
+          <a href="#team">
             Get Involved <ArrowRight className="ml-2" />
           </a>
         </Button>
@@ -281,37 +281,6 @@ const ImpactSection = () => (
   </section>
 );
 
-const VolunteerSection = () => (
-  <section id="volunteer" className="bg-card py-16 md:py-24">
-    <div className="container mx-auto px-4">
-       <div className="grid items-center gap-12 md:grid-cols-2">
-         <div>
-            <Badge>Volunteer With Us</Badge>
-            <h2 className="font-headline mt-4 text-4xl font-bold">
-              Find Your Way to Help
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Your skills and interests can make a real difference. Tell us a bit about yourself, and our AI assistant will suggest personalized volunteer opportunities that align with your passions and our mission.
-            </p>
-            <div className="mt-8">
-              <VolunteerSuggestionForm />
-            </div>
-         </div>
-         <div>
-          <Image
-            src="https://placehold.co/600x500.png"
-            alt="A volunteer helping out"
-            width={600}
-            height={500}
-            className="rounded-lg shadow-lg"
-            data-ai-hint="volunteer helping"
-          />
-        </div>
-       </div>
-    </div>
-  </section>
-);
-
 
 export default function Home() {
   return (
@@ -322,7 +291,6 @@ export default function Home() {
         <AboutSection />
         <MissionSection />
         <ImpactSection />
-        <VolunteerSection />
         <TeamSection />
       </main>
       <Footer />

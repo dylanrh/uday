@@ -11,6 +11,7 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#mission', label: 'Programs' },
   { href: '#impact', label: 'Latest Updates' },
+  { href: '#team', label: 'Our Team' },
   { href: '#contact', label: 'Contact Us' },
 ];
 
