@@ -20,6 +20,7 @@ import { VolunteerSuggestionForm } from '@/components/volunteer-suggestion-form'
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Badge } from '@/components/ui/badge';
+import { TeamSection } from '@/components/our-team';
 
 const HeroSection = () => (
   <section
@@ -322,6 +323,7 @@ export default function Home() {
         <MissionSection />
         <ImpactSection />
         <VolunteerSection />
+        <TeamSection />
       </main>
       <Footer />
     </div>
