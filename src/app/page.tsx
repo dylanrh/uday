@@ -16,7 +16,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { VolunteerSuggestionForm } from '@/components/volunteer-suggestion-form';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Badge } from '@/components/ui/badge';
@@ -56,7 +55,7 @@ const HeroSection = () => (
 const AboutSection = () => (
   <section id="about" className="py-16 md:py-24">
     <div className="container mx-auto px-4">
-      <div className="grid items-center gap-12 md:grid-cols-2">
+      <div className="grid items-start gap-12 md:grid-cols-2">
         <div className="space-y-4">
           <Badge>Audai Shakour</Badge>
           <h2 className="font-headline text-4xl font-bold">
@@ -75,14 +74,30 @@ const AboutSection = () => (
           Audai grew up in Mountain View, California.  After graduating high school, Audai attended George Washington University.  He received a Bachelor of Science in International Economics followed by a Master of Arts in Communication, Culture and Technology at Georgetown University.  He was an avid leader, high school, and college student body president.  A few weeks before his passing, he started his pollical career in the neighborhood city council because he wanted to take a significant role in eradicating homelessness in Los Angeles.  Audai loved to read, knew his way around words, and was a beautiful storyteller who would light up any room he stepped in.  At 6 feet 7, Audai was a kind giant who made people feel that anything in life was possible if you believed in yourself.
           </p>
         </div>
-        <div>
+        <div className="grid grid-cols-1 gap-4">
           <Image
-            src="/images/audia_smile.png"
-            alt="Audai smiling"
+            src="https://picsum.photos/seed/audai1/600/400"
+            alt="Audai"
             width={600}
             height={400}
             className="rounded-lg shadow-lg"
-            data-ai-hint="teamwork community"
+            data-ai-hint="man smiling"
+          />
+          <Image
+            src="https://picsum.photos/seed/audai2/600/400"
+            alt="Audai"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg"
+            data-ai-hint="man portrait"
+          />
+          <Image
+            src="https://picsum.photos/seed/audai3/600/400"
+            alt="Audai"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg"
+            data-ai-hint="man outdoors"
           />
         </div>
       </div>
