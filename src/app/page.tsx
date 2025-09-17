@@ -99,6 +99,14 @@ const AboutSection = () => (
             className="rounded-lg shadow-lg"
             data-ai-hint="man outdoors"
           />
+          <Image
+            src="https://picsum.photos/seed/audai4/600/400"
+            alt="Audai"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg"
+            data-ai-hint="man landscape"
+          />
         </div>
       </div>
     </div>
