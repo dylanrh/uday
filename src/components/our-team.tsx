@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Linkedin } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 
 const teamMembers = [
   {
@@ -70,29 +71,33 @@ export function TeamSection() {
         </div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="overflow-hidden text-center">
-              <Image
-                src={member.image}
-                alt={member.name}
-                width={300}
-                height={300}
-                className="w-full object-cover"
-                data-ai-hint={member.hint}
-              />
-              <CardContent className="p-4">
-                <h3 className="font-headline text-xl font-bold">{member.name}</h3>
-                <p className="text-md text-primary">{member.title}</p>
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block text-muted-foreground hover:text-primary"
-                  aria-label={`LinkedIn profile for ${member.name}`}
-                >
-                  <Linkedin className="h-6 w-6" />
-                </a>
-              </CardContent>
-            </Card>
+            <Link
+              key={index}
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <Card className="overflow-hidden text-center h-full transition-shadow duration-300 group-hover:shadow-lg">
+                <div className="relative">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={300}
+                    height={300}
+                    className="w-full object-cover"
+                    data-ai-hint={member.hint}
+                  />
+                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Linkedin className="h-10 w-10 text-white" />
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-headline text-xl font-bold">{member.name}</h3>
+                  <p className="text-md text-primary">{member.title}</p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
