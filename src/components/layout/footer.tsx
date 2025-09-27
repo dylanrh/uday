@@ -1,11 +1,9 @@
 import Link from 'next/link';
-import { HandHeart, Twitter, Facebook, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { HandHeart, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: Instagram, href: 'https://www.instagram.com/audai_org/', label: 'Instagram' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/udayshakour/', label: 'LinkedIn' },
 ];
 
 export function Footer() {
@@ -27,11 +25,11 @@ export function Footer() {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5" />
-                <a href="mailto:contact@audai.org" className="hover:text-primary">contact@audai.org</a>
+                <a href="mailto:info@audai.org" className="hover:text-primary">info@audai.org</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                <a href="tel:+1234567890" className="hover:text-primary">+1 (234) 567-890</a>
+                <a href="tel:+16504383319" className="hover:text-primary">+1 650-438-3319</a>
               </li>
             </ul>
           </div>
@@ -39,7 +37,7 @@ export function Footer() {
              <h3 className="font-headline text-lg font-semibold">Follow Us</h3>
              <div className="flex space-x-4">
               {socialLinks.map((social) => (
-                <a key={social.label} href={social.href} aria-label={social.label} className="text-muted-foreground hover:text-primary">
+                <a key={social.label} href={social.href} aria-label={social.label} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                   <social.icon className="h-6 w-6" />
                 </a>
               ))}
