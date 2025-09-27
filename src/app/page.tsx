@@ -108,38 +108,14 @@ e            orphan children in Sudan, Audai gave all he could in hopes of a
             in life was possible if you believed in yourself.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div>
           <Image
             src="/images/uday_suit.jpeg"
             alt="Audai"
             width={600}
-            height={400}
+            height={800}
             className="rounded-lg shadow-lg"
             data-ai-hint="man smiling"
-          />
-          <Image
-            src="https://picsum.photos/seed/audai2/600/400"
-            alt="Audai"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
-            data-ai-hint="man portrait"
-          />
-          <Image
-            src="https://picsum.photos/seed/audai3/600/400"
-            alt="Audai"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
-            data-ai-hint="man outdoors"
-          />
-          <Image
-            src="https://picsum.photos/seed/audai4/600/400"
-            alt="Audai"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
-            data-ai-hint="man landscape"
           />
         </div>
       </div>
