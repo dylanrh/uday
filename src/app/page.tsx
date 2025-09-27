@@ -110,7 +110,7 @@ e            orphan children in Sudan, Audai gave all he could in hopes of a
         </div>
         <div>
           <Image
-            src="/images/uday_suit.jpeg?v=2"
+            src="/images/uday_formal.jpeg?v=1"
             alt="Audai"
             width={600}
             height={800}
