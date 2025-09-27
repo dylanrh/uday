@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 const teamMembers = [
   {
-    name: 'Alex Johnson',
+    name: 'Isam Shakour',
     title: 'Executive Director',
-    image: 'https://picsum.photos/seed/1/300/300',
+    image: '/images/isam-shakour.png',
     linkedin: '#',
     hint: 'portrait person'
   },
@@ -58,7 +58,7 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="py-16 md:py-24">
+    <section id="team" className="bg-card py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge>Our Team</Badge>
