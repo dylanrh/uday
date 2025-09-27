@@ -9,49 +9,49 @@ const teamMembers = [
     name: 'Isam Shakour',
     title: 'Executive Director',
     image: '/images/isam-shakour.png',
-    linkedin: '#',
+    linkedin: 'https://www.linkedin.com/in/isamprofile/',
     hint: 'portrait person'
   },
   {
-    name: 'Samantha Lee',
-    title: 'Program Director',
-    image: 'https://picsum.photos/seed/2/300/300',
-    linkedin: '#',
+    name: 'Lamar Thorpe',
+    title: 'Board Director',
+    image: '/images/lamar-thorpe.png',
+    linkedin: 'https://www.linkedin.com/in/lamarthorpe/',
     hint: 'portrait person'
   },
   {
-    name: 'Michael Chen',
-    title: 'Financial Officer',
-    image: 'https://picsum.photos/seed/3/300/300',
-    linkedin: '#',
+    name: 'Sarah Shakour',
+    title: 'Board Director',
+    image: '/images/sarah.png',
+    linkedin: 'https://www.linkedin.com/in/sarahshakour/',
     hint: 'portrait person'
   },
   {
-    name: 'Emily Davis',
-    title: 'Volunteer Coordinator',
-    image: 'https://picsum.photos/seed/4/300/300',
-    linkedin: '#',
+    name: 'Eddie Bernal',
+    title: 'Board Director',
+    image: '/images/eddie-bernal.png',
+    linkedin: 'https://www.linkedin.com/in/eddie-b-9056124a/',
     hint: 'portrait person'
   },
   {
-    name: 'David Rodriguez',
-    title: 'Marketing Head',
-    image: 'https://picsum.photos/seed/5/300/300',
-    linkedin: '#',
+    name: 'Dr. Puja Shakour',
+    title: 'President & Board Director',
+    image: '/images/puja-shakour.png',
+    linkedin: 'https://www.linkedin.com/in/puja-s-43153bb/',
     hint: 'portrait person'
   },
   {
-    name: 'Jessica Garcia',
-    title: 'Community Manager',
-    image: 'https://picsum.photos/seed/6/300/300',
-    linkedin: '#',
+    name: 'Dr. Eman Ahmed',
+    title: 'Treasuser',
+    image: '/images/eman-ahmed.png',
+    linkedin: 'https://www.linkedin.com/in/udayshakour/',
     hint: 'portrait person'
   },
   {
-    name: 'Christopher Martinez',
-    title: 'Operations Lead',
-    image: 'https://picsum.photos/seed/7/300/300',
-    linkedin: '#',
+    name: 'Dylan Hensel',
+    title: 'Secretary',
+    image: '/images/dylan-hensel.png',
+    linkedin: 'https://www.linkedin.com/in/dylanhensel/',
     hint: 'portrait person'
   },
 ];
