@@ -1,15 +1,8 @@
 import Image from 'next/image';
-import { Heart, Users, Target, Quote, ArrowRight } from 'lucide-react';
+import { Heart, Users, Target, ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Badge } from '@/components/ui/badge';
@@ -228,7 +221,7 @@ const recentProjects = [
     title: 'Renovating a Mental Health Hospital in Sri Lanka',
     description:
       "In memory of Audai's 4th year anniversary, we renovated a 28-bed mental hospital at the National Institute of Mental Health in Mulariyava, Sri Lanka. We also donated mosquito nets, a washing machine, and a secure cupboard for medicine.",
-    image: 'https://picsum.photos/seed/1/600/400',
+    image: '/images/mental-hospital-sri-lanka.jpg',
     hint: 'hospital renovation',
   },
   {
