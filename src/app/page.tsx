@@ -223,62 +223,34 @@ const MissionSection = () => (
   </section>
 );
 
-const impactStats = [
-  { value: '10,000+', label: 'Lives Impacted' },
-  { value: '50+', label: 'Community Projects' },
-  { value: '1,200+', label: 'Active Volunteers' },
-  { value: '5', label: 'Countries Served' },
-];
-
-const testimonials = [
+const recentProjects = [
   {
-    quote:
-      "Volunteering with Audai has been a life-changing experience. Seeing the direct impact of our work on the community is incredibly rewarding.",
-    name: 'Jane Doe',
-    role: 'Volunteer',
-    avatar: 'https://placehold.co/100x100.png',
+    title: 'Renovating a Mental Health Hospital in Sri Lanka',
+    description:
+      "In memory of Audai's 4th year anniversary, we renovated a 28-bed mental hospital at the National Institute of Mental Health in Mulariyava, Sri Lanka. We also donated mosquito nets, a washing machine, and a secure cupboard for medicine.",
+    image: 'https://picsum.photos/seed/1/600/400',
+    hint: 'hospital renovation',
   },
   {
-    quote:
-      "The support I received from Audai's program helped me start my own small business. I'm forever grateful for the opportunity.",
-    name: 'John Smith',
-    role: 'Program Beneficiary',
-    avatar: 'https://placehold.co/100x100.png',
+    title: 'A Day of Joy for an Autistic Orphanage',
+    description:
+      "On Audai's birthday, we provided a special day for 40 children at an autistic orphanage in Sri Lanka. We organized a trip to the zoo and the beach, complete with lunch, music, snacks, and ice cream for children who have never had such an experience.",
+    image: 'https://picsum.photos/seed/2/600/400',
+    hint: 'children playing',
   },
   {
-    quote:
-      "Audai's commitment to long-term, sustainable solutions is what makes them stand out. They are truly invested in the communities they serve.",
-    name: 'Dr. Emily Carter',
-    role: 'Partner Organization',
-    avatar: 'https://placehold.co/100x100.png',
-  },
-];
-
-const galleryImages = [
-  {
-    src: 'https://placehold.co/600x400.png',
-    alt: 'Children in a classroom',
-    hint: 'children classroom',
+    title: 'Wellness Retreat for the Blind',
+    description:
+      'We hosted a day retreat for 100 blind individuals, focusing on stress relief, mindfulness, and meditation. The event included food and lodging, providing a space for relaxation and growth for a community often marginalized in Sri Lanka.',
+    image: 'https://picsum.photos/seed/3/600/400',
+    hint: 'meditation nature',
   },
   {
-    src: 'https://placehold.co/600x400.png',
-    alt: 'Community garden project',
-    hint: 'community garden',
-  },
-  {
-    src: 'https://placehold.co/600x400.png',
-    alt: 'Volunteers distributing supplies',
-    hint: 'volunteers supplies',
-  },
-  {
-    src: 'https://placehold.co/600x400.png',
-    alt: 'A person receiving a certificate',
-    hint: 'person certificate',
-  },
-  {
-    src: 'https://placehold.co/600x400.png',
-    alt: 'Group of smiling people',
-    hint: 'people smiling',
+    title: 'Supporting the Sudanese Community in California',
+    description:
+      'We are proud to have supported the Sudanese Association of Northern California in their efforts toward community advancement and advocacy, continuing our commitment to helping communities both near and far.',
+    image: 'https://picsum.photos/seed/4/600/400',
+    hint: 'community event',
   },
 ];
 
@@ -291,70 +263,41 @@ const ImpactSection = () => (
           Making a Difference, Together
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-          Our efforts are measured by the positive changes we bring to people's
-          lives. Here's a glimpse of what we've achieved with your support.
+          In honor of Audai, we continue to create positive change. Here are some
+          of our recent projects.
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
-        {impactStats.map(stat => (
-          <div key={stat.label}>
-            <p className="font-headline text-5xl font-bold text-primary">
-              {stat.value}
-            </p>
-            <p className="mt-2 text-lg text-muted-foreground">{stat.label}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="grid gap-8 md:grid-cols-3">
-        {testimonials.map((testimonial, index) => (
-          <Card key={index} className="flex flex-col">
-            <CardContent className="flex-grow p-6">
-              <Quote className="h-8 w-8 text-primary/50" />
-              <p className="mt-4 text-muted-foreground">{testimonial.quote}</p>
-            </CardContent>
-            <CardHeader className="flex-row items-center gap-4 pt-0">
+      <div className="grid gap-12 md:grid-cols-1">
+        {recentProjects.map((project, index) => (
+          <Card
+            key={index}
+            className="overflow-hidden md:grid md:grid-cols-2 md:gap-8"
+          >
+            <div
+              className={`flex items-center justify-center ${index % 2 === 1 ? 'md:order-last' : ''}`}
+            >
               <Image
-                src={testimonial.avatar}
-                width={48}
-                height={48}
-                alt={testimonial.name}
-                className="rounded-full"
-                data-ai-hint="portrait person"
+                src={project.image}
+                alt={project.title}
+                width={600}
+                height={400}
+                className="h-full w-full object-cover"
+                data-ai-hint={project.hint}
               />
-              <div>
-                <CardTitle className="text-base">{testimonial.name}</CardTitle>
-                <p className="text-sm text-muted-foreground">
-                  {testimonial.role}
-                </p>
-              </div>
-            </CardHeader>
+            </div>
+            <div className="flex flex-col justify-center p-6">
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl">
+                  {project.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">{project.description}</p>
+              </CardContent>
+            </div>
           </Card>
         ))}
-      </div>
-
-      <div>
-        <Carousel className="w-full">
-          <CarouselContent>
-            {galleryImages.map((image, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={600}
-                    height={400}
-                    className="rounded-lg object-cover shadow-lg"
-                    data-ai-hint={image.hint}
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="ml-12" />
-          <CarouselNext className="mr-12" />
-        </Carousel>
       </div>
     </div>
   </section>
