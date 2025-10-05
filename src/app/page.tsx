@@ -83,7 +83,7 @@ const AboutSection = () => (
             communities near and far. From taking care of expenses for a medical
             student in Sri Lanka, building a home for a single mother to
             providing weekly meals to LA homeless, and supporting meals for
-e            orphan children in Sudan, Audai gave all he could in hopes of a
+            an orphan children in Sudan, Audai gave all he could in hopes of a
             better world.
           </p>
           <p className="text-lg text-muted-foreground">
@@ -221,28 +221,28 @@ const recentProjects = [
     title: 'Renovating a Mental Health Hospital in Sri Lanka',
     description:
       "In memory of Audai's 4th year anniversary, we renovated a 28-bed mental hospital at the National Institute of Mental Health in Mulariyava, Sri Lanka. We also donated mosquito nets, a washing machine, and a secure cupboard for medicine.",
-    image: '/images/mental-hospital-sri-lanka.jpg',
+    image: '/images/mental_hospital2.png',
     hint: 'hospital renovation',
   },
   {
     title: 'A Day of Joy for an Autistic Orphanage',
     description:
       "On Audai's birthday, we provided a special day for 40 children at an autistic orphanage in Sri Lanka. We organized a trip to the zoo and the beach, complete with lunch, music, snacks, and ice cream for children who have never had such an experience.",
-    image: 'https://picsum.photos/seed/2/600/400',
+    image: '/images/orphanage.png',
     hint: 'children playing',
   },
   {
     title: 'Wellness Retreat for the Blind',
     description:
       'We hosted a day retreat for 100 blind individuals, focusing on stress relief, mindfulness, and meditation. The event included food and lodging, providing a space for relaxation and growth for a community often marginalized in Sri Lanka.',
-    image: 'https://picsum.photos/seed/3/600/400',
+    image: '/images/blind.png',
     hint: 'meditation nature',
   },
   {
     title: 'Supporting the Sudanese Community in California',
     description:
       'We are proud to have supported the Sudanese Association of Northern California in their efforts toward community advancement and advocacy, continuing our commitment to helping communities both near and far.',
-    image: 'https://picsum.photos/seed/4/600/400',
+    image: '/images/prayer.png',
     hint: 'community event',
   },
 ];
