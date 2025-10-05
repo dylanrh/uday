@@ -35,7 +35,7 @@ const HeroSection = () => (
         </Button>
         <Button asChild size="lg" variant="secondary">
           <a
-            href="https://audai.org/donate"
+            href="https://www.paypal.com/donate?token=Nfh_hoyCgJ16hBCNJqD7OARuGGXS0IBJzDmxfRbTD9T92SNWHpiPdO09Xldozhm890XH7yB9q_Eu41Ea"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -95,7 +95,7 @@ const AboutSection = () => (
             body president. A few weeks before his passing, he started his
             pollical career in the neighborhood city council because he wanted
             to take a significant role in eradicating homelessness in Los
-            Angeles. Audai loved to read, knew his way around words, and was a
+Angeles. Audai loved to read, knew his way around words, and was a
             beautiful storyteller who would light up any room he stepped in. At
             6 feet 7, Audai was a kind giant who made people feel that anything
             in life was possible if you believed in yourself.
