@@ -242,8 +242,8 @@ const recentProjects = [
     title: 'Supporting the Sudanese Community in California',
     description:
       'We are proud to have supported the Sudanese Association of Northern California in their efforts toward community advancement and advocacy, continuing our commitment to helping communities both near and far.',
-    image: '/images/prayer.png',
-    hint: 'community event',
+    image: '/images/sudanese-community-support.png',
+    hint: 'child learning',
   },
 ];
 
