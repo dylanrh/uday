@@ -38,7 +38,7 @@ export function Header() {
         </nav>
         <div className="hidden items-center gap-4 md:flex">
           <Button asChild>
-            <a href="https://www.paypal.com/donate?token=Nfh_hoyCgJ16hBCNJqD7OARuGGXS0IBJzDmxfRbTD9T92SNWHpiPdO09Xldozhm890XH7yB9q_Eu41Ea" target="_blank" rel="noopener noreferrer">Donate</a>
+            <a href="https://www.paypal.com/fundraiser/charity/4563572" target="_blank" rel="noopener noreferrer">Donate</a>
           </Button>
         </div>
         <div className="md:hidden">
@@ -74,7 +74,7 @@ export function Header() {
                   ))}
                 </nav>
                  <Button asChild size="lg" className="mt-auto">
-                    <a href="https://www.paypal.com/donate?token=Nfh_hoyCgJ16hBCNJqD7OARuGGXS0IBJzDmxfRbTD9T92SNWHpiPdO09Xldozhm890XH7yB9q_Eu41Ea" target="_blank" rel="noopener noreferrer">Donate</a>
+                    <a href="https://www.paypal.com/fundraiser/charity/4563572" target="_blank" rel="noopener noreferrer">Donate</a>
                 </Button>
               </div>
             </SheetContent>
