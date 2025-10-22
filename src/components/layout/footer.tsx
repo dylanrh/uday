@@ -8,7 +8,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-secondary text-secondary-foreground">
+    <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-12 md:grid-cols-3">
           <div className="space-y-4">

@@ -7,6 +7,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Badge } from '@/components/ui/badge';
 import { TeamSection } from '@/components/our-team';
+import { ContactForm } from '@/components/contact-form';
 
 const HeroSection = () => (
   <section
@@ -296,6 +297,27 @@ const ImpactSection = () => (
   </section>
 );
 
+const ContactSection = () => (
+  <section id="contact" className="pt-8 pb-16 md:pt-12 md:pb-24 bg-card">
+    <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-2xl space-y-8">
+        <div className="text-center">
+          <Badge>Contact Us</Badge>
+          <h2 className="font-headline mt-4 text-4xl font-bold">
+            Get in Touch
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            Have questions or want to get involved? Send us a message and we'll get back to you as soon as possible.
+          </p>
+        </div>
+        <div className="rounded-lg border bg-background p-6 md:p-8">
+          <ContactForm />
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 export default function Home() {
   return (
     <div className="flex min-h-dvh flex-col">
@@ -306,6 +328,7 @@ export default function Home() {
         <MissionSection />
         <ImpactSection />
         <TeamSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>
