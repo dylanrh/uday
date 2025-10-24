@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'Audai Foundation <onboarding@resend.dev>',
-      to: process.env.CONTACT_EMAIL || 'info@audai.org',
+      to: process.env.CONTACT_EMAIL || 'dylan@hensel.com',
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: `
