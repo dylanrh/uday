@@ -30,7 +30,7 @@ const HeroSection = () => (
       </p>
       <div className="flex flex-wrap justify-center gap-4">
         <Button asChild size="lg">
-          <a href="#team">
+          <a href="#contact">
             Get Involved <ArrowRight className="ml-2" />
           </a>
         </Button>
