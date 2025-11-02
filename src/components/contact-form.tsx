@@ -33,6 +33,9 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
+  // Explicitly set displayName for React DevTools
+  ContactForm.displayName = 'ContactForm';
+
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
